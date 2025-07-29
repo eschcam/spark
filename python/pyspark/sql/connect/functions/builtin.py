@@ -3141,13 +3141,11 @@ current_date.__doc__ = pysparkfuncs.current_date.__doc__
 
 
 @overload
-def current_time() -> Column:
-    ...
+def current_time() -> Column: ...
 
 
 @overload
-def current_time(precision: int) -> Column:
-    ...
+def current_time(precision: int) -> Column: ...
 
 
 def current_time(precision: Optional[int] = None) -> Column:
@@ -3434,13 +3432,11 @@ unix_seconds.__doc__ = pysparkfuncs.unix_seconds.__doc__
 
 
 @overload
-def to_time(str: "ColumnOrName") -> Column:
-    ...
+def to_time(str: "ColumnOrName") -> Column: ...
 
 
 @overload
-def to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column:
-    ...
+def to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column: ...
 
 
 def to_time(str: "ColumnOrName", format: Optional["ColumnOrName"] = None) -> Column:
@@ -3472,13 +3468,11 @@ to_timestamp.__doc__ = pysparkfuncs.to_timestamp.__doc__
 
 
 @overload
-def try_to_time(str: "ColumnOrName") -> Column:
-    ...
+def try_to_time(str: "ColumnOrName") -> Column: ...
 
 
 @overload
-def try_to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column:
-    ...
+def try_to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column: ...
 
 
 def try_to_time(str: "ColumnOrName", format: Optional["ColumnOrName"] = None) -> Column:

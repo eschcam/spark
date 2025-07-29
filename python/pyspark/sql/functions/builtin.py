@@ -9285,13 +9285,11 @@ def current_timezone() -> Column:
 
 
 @overload
-def current_time() -> Column:
-    ...
+def current_time() -> Column: ...
 
 
 @overload
-def current_time(precision: int) -> Column:
-    ...
+def current_time(precision: int) -> Column: ...
 
 
 @_try_remote_functions
@@ -11692,13 +11690,11 @@ def unix_seconds(col: "ColumnOrName") -> Column:
 
 
 @overload
-def to_time(str: "ColumnOrName") -> Column:
-    ...
+def to_time(str: "ColumnOrName") -> Column: ...
 
 
 @overload
-def to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column:
-    ...
+def to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column: ...
 
 
 @_try_remote_functions
@@ -11836,13 +11832,11 @@ def to_timestamp(col: "ColumnOrName", format: Optional[str] = None) -> Column:
 
 
 @overload
-def try_to_time(str: "ColumnOrName") -> Column:
-    ...
+def try_to_time(str: "ColumnOrName") -> Column: ...
 
 
 @overload
-def try_to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column:
-    ...
+def try_to_time(str: "ColumnOrName", format: "ColumnOrName") -> Column: ...
 
 
 @_try_remote_functions
